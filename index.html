@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме на hh.ru Панин Александр</title>
+    <title>Аналитика продаж Wildberries</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -38,14 +38,14 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 30px;
+            padding: 0 20px;
         }
         
         header {
             background: rgba(13, 13, 25, 0.95);
             backdrop-filter: blur(15px);
             border-bottom: 1px solid rgba(92, 107, 192, 0.3);
-            padding: 25px 0;
+            padding: 10px 0;
             position: static;
             top: 0;
             z-index: 100;
@@ -59,7 +59,7 @@
         }
         
         .logo {
-            font-size: 32px;
+            font-size: 40px;
             font-weight: 700;
             background: linear-gradient(90deg, #5c6bc0, #9c27b0, #ff4081);
             -webkit-background-clip: text;
@@ -75,8 +75,10 @@
             border-radius: 12px;
             padding: 12px 20px;
             margin: 20px 0;
+            position: sticky;
             border: 1px solid rgba(92, 107, 192, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            
         }
         
         .nav-links {
@@ -265,16 +267,83 @@
             left: 0;
             box-shadow: 0 0 12px rgba(92, 107, 192, 0.4);
         }
+        .section2 { 
+            margin-bottom: 40px;
+        }
+        .section-text2 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #b6fdba;
+            margin-bottom: 10px;
+        }
+        .section-title2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #6ae208;
+            margin: 30px 0 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-title2:before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 25px;
+            background: linear-gradient(to bottom, #5c6bc0, #9c27b0);
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            box-shadow: 0 0 12px rgba(92, 107, 192, 0.4);
+        }
+        .section3 { 
+            margin-bottom: 40px;
+        }
+        .section-text3 {
+            font-size: 15px;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .section-title3 {
+            font-size: 22px; 
+            font-weight: 600;            
+            background: linear-gradient(90deg, #ff014d, #43ff32, #4afc04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(127, 143, 233, 0.3);
+            margin: 30px 0 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-title3:before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 25px;
+            background: linear-gradient(to bottom, #5c6bc0, #9c27b0);
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            box-shadow: 0 0 12px rgba(92, 107, 192, 0.4);
+        }
         
         .download-btn {
             display: inline-block;
             background: linear-gradient(90deg, #5c6bc0, #9c27b0);
             color: white;
-            padding: 12px 25px;
+            padding: 12px 15px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            margin: 20px 0;
+            margin: 10px 0;
             transition: all 0.4s ease;
             border: none;
             cursor: pointer;
@@ -661,8 +730,8 @@
         
         .pie-chart {
             position: relative;
-            width: 280px;
-            height: 280px;
+            width: 340px;
+            height: 340px;
             border-radius: 50%;
             background: conic-gradient(
                 #5c6bc0 0% 65.2%,
@@ -718,8 +787,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 200px;
-            height: 200px;
+            width: 260px;
+            height: 260px;
             background: rgba(30, 30, 50, 0.9);
             backdrop-filter: blur(10px);
             border-radius: 50%;
@@ -1017,6 +1086,24 @@
         .competitor2 .highlight {
             color: #2ecc71;
         }
+        .highlight2 {
+            background: linear-gradient(90deg, rgba(2, 105, 42, 0.404), rgba(24, 163, 48, 0.226));
+            border-radius: 8px;
+            padding: 3px 10px;
+            font-weight: 700;
+        }
+        
+        .our-card .highlight2 {
+            color: #5c6bc0;
+        }
+        
+        .competitor1 .highlight2 {
+            color: #e74c3c;
+        }
+        
+        .competitor2 .highlight2 {
+            color: #2ecc71;
+        }
         
         .warehouse-section {
             margin-top: 25px;
@@ -1305,7 +1392,9 @@
     <header>
         <div class="container header-content">
             <div class="logo">Evature Analytics</div>
-            <div ><a class="download-btn" href="https://kovrov.hh.ru/resume/1a6f65c0ff0d63b4e50039ed1f663039585a67" target="_blank">Резюме на hh.ru Панин Александр</a></div>
+            
+            <div class="footer-download">
+                <a class="download-btn" href="https://kovrov.hh.ru/resume/1a6f65c0ff0d63b4e50039ed1f663039585a67" target="_blank">Перейти на hh.ru * Резюме Панин А.А.</a>
         </div>
     </header>
     
@@ -1741,18 +1830,57 @@
         <!-- Page 2: Promotion Strategy -->
         <section id="strategy" class="page">
             <h1>Стратегия продвижения</h1>
+            <div class="card">
+                <div class="section2">
+                    <p class="section-title2">Ключевая идея</p>
+                    <p class="section-text2">Выстроить доверие и эмоциональный отклик у покупателя через яркое визуальное оформление, акцент на уникальных преимуществах и персонализированный подход, раскрывая товары как стильное, комфортное и универсальное решение для любого образа.</p>
+                </div>
             
             <div class="card">
-                <div class="section">
-                    <p class="section-title">Ключевая идея</p>
-                    <p>Выстроить доверие и эмоциональный отклик у покупателя через яркое визуальное оформление, акцент на уникальных преимуществах и персонализированный подход, раскрывая товары как стильное, комфортное и универсальное решение для любого образа.</p>
+                              
+                <div class="section3">
+                    <p class="section-title3">Стратегия продвижения для артикула 381127338</p>
+                    <p class="section-text3">Для повышения эффективности продвижения товара необходимо реализовать комплексную стратегию, охватывающую все этапы взаимодействия с покупателем - от привлечения внимания до формирования лояльности.</p>
                 </div>
-                
                 <div class="section">
-                    <p class="section-title">Стратегия продвижения для артикула 381127338</p>
-                    <p>Для повышения эффективности продвижения товара необходимо реализовать комплексную стратегию, охватывающую все этапы взаимодействия с покупателем - от привлечения внимания до формирования лояльности.</p>
-                </div>
-                
+                    <p class="section-title">Рекомендации по оптимизации карточки товара</p>
+                    <ul>
+                        <li>Добавить минимум 7-8 качественных фото: общий вид, детали ткани, пояс на резинке, посадка, различные цвета, образы с товаром</li>
+                        <li>Создать короткое видео (15-30 сек), демонстрирующее динамику брюк при движении</li>
+                        <li>Создать рич-контент</li>
+                        <li>Переписать описание, выделив преимущества:
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>"Лёгкая дышащая ткань идеально подходит для летнего сезона"</li>
+                                <li>"Эластичная резинка обеспечивает комфортную посадку без стягивания"</li>
+                                <li>"Универсальный фасон палаццо в сочетании с леопардовым принтом создаст яркий образ"</li>
+                                <li>"4 варианта цветов позволяют подобрать брюки под любой гардероб"</li>
+                            </ul>
+                        
+                        <p class="section-title">Работа с ключевыми запросами</p>
+                    </li>
+                    <li>Добавить в заголовок и описание ключевые слова: "женские летние брюки палаццо", "брюки леопардовый принт", "брюки на резинке", "женские брюки больших размеров"</li>
+                    <li>Создать мини-контент в описании: "Как стильно сочетать брюки палаццо с другими вещами"</li>
+                    <li>Использовать специально отобранные ключевые фразы для уточнения поиска</li>
+                    <p class="section-title">Ценовая политика и акции</p>
+                    </li>
+                    <li>Отслеживать и высччитывать акции ВБ</li>
+                    <li>Участвовать в сезонных распродажах Wildberries</li>
+                    <li>Отслеживать ценообразование</li>
+                    <p class="section-title">Продвижение через отзывы</p>
+                    </li>
+                    <li>Активно отвечать на все отзывы, особенно на негативные</li>
+                    <li>Подробно отвечать на вопросы покупателей</li>
+                    <p class="section-title">Рекламные кампании</p>
+                    </li>
+                    <li>Сотрудничать с микроблогерами в нише женской одежды</li>
+                    <li>Использовать ретаргетинг для возврата пользователей</li>
+                    <p class="section-title">Конкурентный анализ и позиционирование</p>
+                    </li>
+                    <li>Сделать акцент на универсальности (4 цвета против 2-3 у конкурентов)</li>
+                    <li>Улучшить скорость доставки до клиента</li>
+                    <li>Проводить регулярный мониторинг цен конкурентов</li>
+                    <li>Анализировать отзывы покупателей о товарах конкурентов</li>
+                    
                 <div class="section">
                     <p class="section-title">Проблемы и решения</p>
                     
@@ -1834,24 +1962,7 @@
                     </div>
                 </div>
                 
-                <div class="section">
-                    <p class="section-title">Рекомендации по оптимизации карточки товара</p>
-                    <ul>
-                        <li>Добавить минимум 7-8 качественных фото: общий вид, детали ткани, пояс на резинке, посадка, различные цвета, образы с товаром</li>
-                        <li>Создать короткое видео (15-30 сек), демонстрирующее динамику брюк при движении</li>
-                        <li>Создать рич-контент</li>
-                        <li>Переписать описание, выделив преимущества:
-                            <ul style="margin-left: 20px; margin-top: 5px;">
-                                <li>"Лёгкая дышащая ткань идеально подходит для летнего сезона"</li>
-                                <li>"Эластичная резинка обеспечивает комфортную посадку без стягивания"</li>
-                                <li>"Универсальный фасон палаццо в сочетании с леопардовым принтом создаст яркий образ"</li>
-                                <li>"4 варианта цветов позволяют подобрать брюки под любой гардероб"</li>
-                            </ul>
-                        </li>
-                        <li>Добавить в заголовок и описание ключевые слова: "женские летние брюки палаццо", "брюки леопардовый принт", "брюки на резинке", "женские брюки больших размеров"</li>
-                        <li>Создать мини-контент в описании: "Как стильно сочетать брюки палаццо с другими вещами"</li>
-                        <li>Использовать специально отобранные ключевые фразы для уточнения поиска</li>
-                    </ul>
+                
 
                 </div>
             </div>
@@ -2622,22 +2733,22 @@
                         <div class="legend">
                             <div class="legend-item">
                                 <div class="legend-color" style="background-color: #5c6bc0;"></div>
-                                <div class="legend-seller">ИП Мазманова Бела Артюшовна</div>
+                                <div class="legend-seller">ИП Мазманова Б А</div>
                                 <div class="legend-percentage">65.2%</div>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-color" style="background-color: #e74c3c;"></div>
-                                <div class="legend-seller">ИП Савинов Виталий Александрович</div>
+                                <div class="legend-seller">ИП Савинов В А</div>
                                 <div class="legend-percentage">13.1%</div>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-color" style="background-color: #2ecc71;"></div>
-                                <div class="legend-seller">ИП Сорокин Евгений Юрьевич</div>
+                                <div class="legend-seller">ИП Сорокин Е Ю</div>
                                 <div class="legend-percentage">8.7%</div>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-color" style="background-color: #f39c12;"></div>
-                                <div class="legend-seller">ИП Бобрешова Наталья Андреевна</div>
+                                <div class="legend-seller">ИП Бобрешова Н А</div>
                                 <div class="legend-percentage">8.0%</div>
                             </div>
                             <div class="legend-item">
@@ -2858,17 +2969,17 @@
                         if (labelText) labelText.textContent = sellerName;
                         
                         // Подсвечиваем центр цветом продавца
-                        pieCenter.style.background = `${sellerColors[index]}20`;
+                        pieCenter.style.background = `${sellerColors[index]}100`;
                         pieCenter.style.borderColor = sellerColors[index];
                         
                         // Делаем текст черным для лучшей читаемости
-                        if (percentageText) percentageText.style.color = '#000';
-                        if (labelText) labelText.style.color = '#000';
+                        if (percentageText) percentageText.style.color = sellerColors[index];
+                        if (labelText) labelText.style.color = sellerColors[index];
                     }
                     
                     // Увеличиваем текущий элемент легенды
                     this.style.transform = 'scale(1.1)';
-                    this.style.background = `${sellerColors[index]}30`;
+                    this.style.background = `${sellerColors[index]}80`;
                 });
                 
                 item.addEventListener('mouseleave', function() {
